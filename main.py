@@ -1,10 +1,8 @@
 from mode import Mode
 from musicList import MusicList
 from selectMusic import SelectMusic
-from musicStartSingle import MusicStart
-from musicStartLoop import MusicStart
+from musicStart import *
 from listUp import ListUp
-from music import Music
 
 def main():
     mode = Mode()
@@ -12,19 +10,18 @@ def main():
     selectMusic = SelectMusic()
     musicStart = MusicStart()
     listUp = ListUp()
-    music = Music()
 
     listUp.listUp()
 
-    intmode = mode.selectMode()
-    while intmode == "EOF":
-        intmode = mode.selectMode()
+    modeFlag = mode.selectMode()
+    while modeFlag == "EOF":
+        modeFlag = mode.selectMode()
 
-    if intmode == "loop":
+    if modeFlag == "loop":
         print("\n")
         musicList.musicList()
 
-    if intmode == "single":
+    if modeFlag == "single":
         print("\n")
         musicList.musicList()
         number = selectMusic.selectMusic()

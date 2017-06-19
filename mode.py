@@ -6,12 +6,12 @@ class Mode:
         print("exit or q")
         print("------------")
 
-        intmode = input("=> ")
+        modeFlag = input("=> ")
 
-        if intmode in {"q", "exit"}:
+        if modeFlag in {"q", "exit"}:
             exit()
 
-        if intmode in {"loop", "single"}:
-            return intmode
+        if modeFlag in {"loop", "single"}:
+            return modeFlag
 
         return "EOF"
