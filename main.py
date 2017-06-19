@@ -20,11 +20,14 @@ def main():
     if modeFlag == "loop":
         print("\n")
         musicList.musicList()
+        print("\n")
+        musicStart.loop()
 
     if modeFlag == "single":
         print("\n")
         musicList.musicList()
         number = selectMusic.selectMusic()
+        print("\n")
         musicStart.single(number)
 
 if __name__ == '__main__':

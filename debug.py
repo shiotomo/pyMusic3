@@ -1,8 +1,9 @@
 from listUp import ListUp
-from readJson import *
+from readJson import ReadJson
 
 listUp = ListUp()
 listUp.listUp()
 
 readJson = ReadJson()
-readJson.jsonSelect()
+hoge = readJson.jsonNumber()
+print (hoge)
