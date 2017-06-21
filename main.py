@@ -3,6 +3,7 @@ from musicList import MusicList
 from selectMusic import SelectMusic
 from musicStart import *
 from listUp import ListUp
+from conf import Conf
 
 def main():
     mode = Mode()
@@ -10,6 +11,9 @@ def main():
     selectMusic = SelectMusic()
     musicStart = MusicStart()
     listUp = ListUp()
+    conf = Conf()
+
+    conf.existence()
 
     listUp.listUp()
 

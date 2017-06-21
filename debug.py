@@ -6,4 +6,5 @@ listUp.listUp()
 
 readJson = ReadJson()
 hoge = readJson.jsonNumber()
+
 print (hoge)

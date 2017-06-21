@@ -104,5 +104,6 @@ ENV/
 
 /Music/*
 list.json
+debug.py
 
 # End of https://www.gitignore.io/api/python
